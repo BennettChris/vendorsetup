@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6e9dc6f987b01990de3f21b8cebb35df</sp_column>
+        <sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-07-20 19:29:44</sys_created_on>
+        <sys_id>4cbdce7187f01990de3f21b8cebb3513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sp_instance_4cbdce7187f01990de3f21b8cebb3513</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-07-20 19:29:44</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=4cbdce7187f01990de3f21b8cebb3513"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</application>
+        <file_path/>
+        <instance_id>a122f7bbdb98c510f37acac50596196d</instance_id>
+        <instance_name>hoosiersdemo</instance_name>
+        <name>sp_instance_4cbdce7187f01990de3f21b8cebb3513</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">6e9dc6f987b01990de3f21b8cebb35df</sp_column><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>chris.bennett</sys_created_by><sys_created_on>2022-07-20 19:29:44</sys_created_on><sys_id>4cbdce7187f01990de3f21b8cebb3513</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package><sys_policy/><sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope><sys_update_name>sp_instance_4cbdce7187f01990de3f21b8cebb3513</sys_update_name><sys_updated_by>chris.bennett</sys_updated_by><sys_updated_on>2022-07-20 19:29:44</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=4cbdce7187f01990de3f21b8cebb3513"/></record_update>]]></payload>
+        <payload_hash>385892745</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>fe7523c5876341d0bb8897983cbb3582</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-07-20 19:29:44</sys_created_on>
+        <sys_id>ccbdce7187f01990de3f21b8cebb3515</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1821d1669660000001</sys_recorded_at>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-07-20 19:29:44</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>c4bdce7177f0199038caf27e2b07e615</update_guid>
+        <update_guid_history>c4bdce7177f0199038caf27e2b07e615:385892745</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8a41fbde87f41110de3f21b8cebb356d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-07-22 16:01:49</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>9fa7d6b7875142e6a79e0544746e8a44</sys_id>
+        <sys_metadata>4cbdce7187f01990de3f21b8cebb3513</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_scope_delete display_value="">0480b2073a174490b3213a169621d924</sys_scope_delete>
+        <sys_update_name>sp_instance_4cbdce7187f01990de3f21b8cebb3513</sys_update_name>
+        <sys_update_version display_value="sp_instance_4cbdce7187f01990de3f21b8cebb3513">ccbdce7187f01990de3f21b8cebb3515</sys_update_version>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-07-22 16:01:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

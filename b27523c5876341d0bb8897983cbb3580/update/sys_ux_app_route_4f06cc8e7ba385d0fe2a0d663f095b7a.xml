@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="New Vendor Setup Config">8706cc8ebfa385d054fb5a0a179b017b</app_config>
+        <description/>
+        <fields/>
+        <icon>graduation-cap-outline</icon>
+        <name>Agent assist</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Record">558adc930f0210107d20409dc4767e84</parent_macroponent>
+        <parent_macroponent_composition_element_id>contextual_sidebar</parent_macroponent_composition_element_id>
+        <route_type>agentassisttab</route_type>
+        <screen_type display_value="Agent assist tab">d15fd4970f0210107d20409dc4767e08</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:57:06</sys_created_on>
+        <sys_id>4f06cc8e7ba385d0fe2a0d663f095b7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agent assist</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sys_ux_app_route_4f06cc8e7ba385d0fe2a0d663f095b7a</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:57:06</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=4f06cc8e7ba385d0fe2a0d663f095b7a"/>
+</record_update>

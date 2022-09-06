@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="vendor_contacted" table="x_snc_new_vendor_0_vendor_info" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>vendor_contacted</element>
+            <name>x_snc_new_vendor_0_vendor_info</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>chris.bennett</sys_created_by>
+            <sys_created_on>2022-05-17 15:18:10</sys_created_on>
+            <sys_id>c35e274587a341d0bb8897983cbb3576</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>vendor_contacted</sys_name>
+            <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+            <sys_update_name>sys_choice_x_snc_new_vendor_0_vendor_info_vendor_contacted</sys_update_name>
+            <sys_updated_by>chris.bennett</sys_updated_by>
+            <sys_updated_on>2022-05-17 15:18:10</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>vendor_contacted</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spoke with Vendor</label>
+            <language>en</language>
+            <name>x_snc_new_vendor_0_vendor_info</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>chris.bennett</sys_created_by>
+            <sys_created_on>2022-05-17 15:18:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4f5e274587a341d0bb8897983cbb3575</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.bennett</sys_updated_by>
+            <sys_updated_on>2022-05-17 15:18:10</sys_updated_on>
+            <value>spoke_with_vendor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>vendor_contacted</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Answer</label>
+            <language>en</language>
+            <name>x_snc_new_vendor_0_vendor_info</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>chris.bennett</sys_created_by>
+            <sys_created_on>2022-05-17 15:18:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>475e274587a341d0bb8897983cbb357b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.bennett</sys_updated_by>
+            <sys_updated_on>2022-05-17 15:18:10</sys_updated_on>
+            <value>no_answer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>vendor_contacted</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Left voicemail</label>
+            <language>en</language>
+            <name>x_snc_new_vendor_0_vendor_info</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>chris.bennett</sys_created_by>
+            <sys_created_on>2022-05-17 15:18:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf5e274587a341d0bb8897983cbb3598</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.bennett</sys_updated_by>
+            <sys_updated_on>2022-05-17 15:18:10</sys_updated_on>
+            <value>left_voicemail</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>vendor_contacted</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wrong number</label>
+            <language>en</language>
+            <name>x_snc_new_vendor_0_vendor_info</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>chris.bennett</sys_created_by>
+            <sys_created_on>2022-05-17 15:18:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb5e274587a341d0bb8897983cbb359d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chris.bennett</sys_updated_by>
+            <sys_updated_on>2022-05-17 15:18:10</sys_updated_on>
+            <value>wrong_number</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

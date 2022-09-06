@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="notify_deparment" label="Notify deparment" language="en" table="x_snc_new_vendor_0_vendor_info">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>notify_deparment</element>
+            <help/>
+            <hint/>
+            <label>Notify deparment</label>
+            <language>en</language>
+            <name>x_snc_new_vendor_0_vendor_info</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris.bennett</sys_created_by>
+            <sys_created_on>2022-05-19 18:47:52</sys_created_on>
+            <sys_id>e2817a3d87ab45d0bb8897983cbb3557</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_name>Notify deparment</sys_name>
+            <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_new_vendor_0_vendor_info_notify_deparment_en</sys_update_name>
+            <sys_updated_by>chris.bennett</sys_updated_by>
+            <sys_updated_on>2022-05-23 13:24:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

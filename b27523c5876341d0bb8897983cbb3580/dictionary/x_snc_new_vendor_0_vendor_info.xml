@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Vendor Info" max_length="40" name="x_snc_new_vendor_0_vendor_info" sizeclass="25" text_index="true" type="collection">
+        <element label="Approval form" max_length="40" name="approval_form" type="boolean"/>
+        <element label="EPA form" max_length="40" name="epa_form" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Notify deparment" max_length="40" name="notify_deparment" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Business" sequence="0" value="business"/>
+                <element inactive_on_update="false" label="Procurement" sequence="1" value="procurement"/>
+            </choice>
+        </element>
+        <element label="Possible fraud" max_length="40" name="possible_fraud" type="boolean"/>
+        <element label="Request form" max_length="40" name="request_form" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor contacted" max_length="40" name="vendor_contacted" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Spoke with Vendor" sequence="0" value="spoke_with_vendor"/>
+                <element inactive_on_update="false" label="No Answer" sequence="1" value="no_answer"/>
+                <element inactive_on_update="false" label="Left voicemail" sequence="2" value="left_voicemail"/>
+                <element inactive_on_update="false" label="Wrong number" sequence="3" value="wrong_number"/>
+            </choice>
+        </element>
+        <element label="Vendor email sent" max_length="40" name="vendor_email_sent" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor name" max_length="80" name="vendor_name" read_only="true" type="string"/>
+        <element label="W9 form" max_length="40" name="w9_form" type="boolean"/>
+    </element>
+</database>

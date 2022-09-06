@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">d75c05f6db0030101823c04b13961990</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-17 15:09:48</sys_created_on>
+        <sys_id>607c238187a341d0bb8897983cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-17 15:09:48</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

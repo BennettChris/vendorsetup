@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="">ac12408687a385d0bb8897983cbb35fe</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:39:43</sys_created_on>
+        <sys_id>6412ccc687a385d0bb8897983cbb357e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set up a new vendor.SNC External</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_6412ccc687a385d0bb8897983cbb357e</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:39:43</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</application>
+        <file_path/>
+        <instance_id>a122f7bbdb98c510f37acac50596196d</instance_id>
+        <instance_name>hoosiersdemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_6412ccc687a385d0bb8897983cbb357e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="">ac12408687a385d0bb8897983cbb35fe</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>chris.bennett</sys_created_by><sys_created_on>2022-05-20 00:39:43</sys_created_on><sys_id>6412ccc687a385d0bb8897983cbb357e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Set up a new vendor.SNC External</sys_name><sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package><sys_policy/><sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_6412ccc687a385d0bb8897983cbb357e</sys_update_name><sys_updated_by>chris.bennett</sys_updated_by><sys_updated_on>2022-05-20 00:39:43</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-27150724</payload_hash>
+        <record_name>Set up a new vendor.SNC External</record_name>
+        <reverted_from/>
+        <source>d0644c1187030110de3f21b8cebb3554</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-04-22 20:22:58</sys_created_on>
+        <sys_id>5a93c88a87a385d0bb8897983cbb353d</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18052f128d00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>1a93c88ab8a385d0ca71af40a03d373d</update_guid>
+        <update_guid_history>1a93c88ab8a385d0ca71af40a03d373d:-27150724</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Set up a new vendor.SNC External">5a93c88a87a385d0bb8897983cbb353f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:46:24</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>0d521c353d674e2284f0d37d2e70f484</sys_id>
+        <sys_metadata>6412ccc687a385d0bb8897983cbb357e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set up a new vendor.SNC External</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_scope_delete display_value="">0480b2073a174490b3213a169621d924</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_6412ccc687a385d0bb8897983cbb357e</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_6412ccc687a385d0bb8897983cbb357e">5a93c88a87a385d0bb8897983cbb353d</sys_update_version>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:46:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

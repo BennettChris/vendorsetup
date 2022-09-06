@@ -1,0 +1,2274 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>send notification to procurement or business of new vendor</description>
+        <internal_name>notify_procurement_or_business</internal_name>
+        <label_cache>[{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛Vendor Info Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"sys_id"},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.__dont_treat_as_error__","label":"2 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.__action_status__","label":"2 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.Table","label":"2 - Create Task➛Retention Package Table","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.Record","label":"2 - Create Task➛Retention Package Record","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Vendor Info Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"sys_created_by"},{"name":"Created_1.current.vendor_name","label":"Trigger - Record Created➛Vendor Info Record➛Vendor name","reference":"","reference_display":"Vendor name","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"vendor_name"},{"name":"Created_1.current","label":"Trigger - Record Created➛Vendor Info Record","reference":"x_snc_new_vendor_0_vendor_info","reference_display":"Vendor Info","type":"reference","base_type":"reference","attributes":{}},{"name":"904b139a-c60f-4ad0-9af4-469c1a748afd.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"904b139a-c60f-4ad0-9af4-469c1a748afd.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"904b139a-c60f-4ad0-9af4-469c1a748afd.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Vendor Info Record","reference":"x_snc_new_vendor_0_vendor_info","reference_display":"Vendor Info","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.vendor_name","label":"Trigger - Record Updated➛Vendor Info Record➛Vendor name","reference":"","reference_display":"Vendor name","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"vendor_name"},{"name":"Updated_1.current.sys_created_by","label":"Trigger - Record Updated➛Vendor Info Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"sys_created_by"},{"name":"ade91f86-85f5-4f0e-887a-fadff4decd25.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ade91f86-85f5-4f0e-887a-fadff4decd25.__action_status__","label":"3 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ade91f86-85f5-4f0e-887a-fadff4decd25.__dont_treat_as_error__","label":"3 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.a337c9dfc9692050f877548ac44adacb}}","label":"Approvers - Record Updated","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.record","label":"5 - Update Record➛Retention Package Record","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.table_name","label":"5 - Update Record➛Retention Package Table","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>31d3d7f287630dd0bb8897983cbb351d</master_snapshot>
+        <name>Notify Procurement or Business</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>1e30ab3a87a30dd0bb8897983cbb3556</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-19 18:41:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83ffee7987ab45d0bb8897983cbb355a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Notify Procurement or Business</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sys_hub_flow_83ffee7987ab45d0bb8897983cbb355a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:47</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_new_vendor_0_vendor_info">vendor_contacted=spoke_with_vendor<item display_value="Spoke with Vendor" endquery="false" field="vendor_contacted" goto="false" newquery="false" operator="=" or="false" value="spoke_with_vendor"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:45:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e30ab3a87a30dd0bb8897983cbb3556</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <table>x_snc_new_vendor_0_vendor_info</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"d230ab3a87a30dd0bb8897983cbb3589","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>83ffee7987ab45d0bb8897983cbb355a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:45:46</sys_created_on>
+        <sys_id>d230ab3a87a30dd0bb8897983cbb3589</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <trigger display_value="">1e30ab3a87a30dd0bb8897983cbb3556</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>d230ab3a87a30dd0bb8897983cbb3589</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:45:46</sys_created_on>
+        <sys_id>aa30ab3a87a30dd0bb8897983cbb3589</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT INd230ab3a87a30dd0bb8897983cbb3589"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN099c0ff687230dd0bb8897983cbb3530"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>099c0ff687230dd0bb8897983cbb3530</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=099c0ff687230dd0bb8897983cbb3530"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>099c0ff687230dd0bb8897983cbb3530</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>859c0ff687230dd0bb8897983cbb3532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <value>x_snc_new_vendor_0_vendor_info</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>099c0ff687230dd0bb8897983cbb3530</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>c99c0ff687230dd0bb8897983cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <value>vendor_contacted=spoke_with_vendor</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=099c0ff687230dd0bb8897983cbb3530"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN43ffee7987ab45d0bb8897983cbb355b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>83ffee7987ab45d0bb8897983cbb355a</id>
+        <name>Notify Procurement or Business</name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-19 18:41:04</sys_created_on>
+        <sys_id>43ffee7987ab45d0bb8897983cbb355b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-19 18:41:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=43ffee7987ab45d0bb8897983cbb355b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN4d9c0ff687230dd0bb8897983cbb3527,5a3b377d876385d0bb8897983cbb3566,963b377d876385d0bb8897983cbb356c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD06306b3af3a30dd044649cb461567655,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</model>
+        <model_id>83ffee7987ab45d0bb8897983cbb355a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>4d9c0ff687230dd0bb8897983cbb3527</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</model>
+        <model_id>83ffee7987ab45d0bb8897983cbb355a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:47</sys_created_on>
+        <sys_id>5a3b377d876385d0bb8897983cbb3566</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</model>
+        <model_id>83ffee7987ab45d0bb8897983cbb355a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>963b377d876385d0bb8897983cbb356c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN800b13fe87630dd0bb8897983cbb35e7,9e939fb287630dd0bb8897983cbb35de,d63b377d876385d0bb8897983cbb3587,f7fa13fe87630dd0bb8897983cbb35d7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</flow>
+        <order>5</order>
+        <parent_ui_id>03dc7c4b-d6e6-4da0-810e-9b08ebd19b7c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>800b13fe87630dd0bb8897983cbb35e7</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-08-30 18:54:55</sys_updated_on>
+        <ui_id>51fb9fe8-420d-447d-82dd-58e3236fd624</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=800b13fe87630dd0bb8897983cbb35e7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>800b13fe87630dd0bb8897983cbb35e7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>440b13fe87630dd0bb8897983cbb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <value>x_snc_new_vendor_0_retention</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>800b13fe87630dd0bb8897983cbb35e7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>800b13fe87630dd0bb8897983cbb35e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:41</sys_updated_on>
+        <value>assignment_group={"display":"Treasury Fulfillers","value":"067156e6db9a7c101823c04b1396197d"}^assigned_to={"display":"Annie Approver","value":"c9884ac30a0a0bdb3879454e8f02774e"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=800b13fe87630dd0bb8897983cbb35e7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>800b13fe87630dd0bb8897983cbb35e7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>4c0b13fe87630dd0bb8897983cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{62733943-ea13-40d3-acb8-e5b9713236bc.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>800b13fe87630dd0bb8897983cbb35e7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>880b13fe87630dd0bb8897983cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>800b13fe87630dd0bb8897983cbb35e7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>000b13fe87630dd0bb8897983cbb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=800b13fe87630dd0bb8897983cbb35e7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=800b13fe87630dd0bb8897983cbb35e7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:50:36</sys_created_on>
+        <sys_id>9e939fb287630dd0bb8897983cbb35de</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-08-30 18:54:55</sys_updated_on>
+        <ui_id>62733943-ea13-40d3-acb8-e5b9713236bc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9e939fb287630dd0bb8897983cbb35de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9e939fb287630dd0bb8897983cbb35de</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:50:36</sys_created_on>
+        <sys_id>16939fb287630dd0bb8897983cbb35e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:50:36</sys_updated_on>
+        <value>x_snc_new_vendor_0_retention</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9e939fb287630dd0bb8897983cbb35de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>9e939fb287630dd0bb8897983cbb35de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:50:36</sys_created_on>
+        <sys_id>92939fb287630dd0bb8897983cbb35e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:59:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>vendor_name={{Updated_1.current.vendor_name}}^parent={{Updated_1.current.sys_id}}^assignment_group={"display":"Approvers","value":"a337c9dfc9692050f877548ac44adacb"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>9e939fb287630dd0bb8897983cbb35de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:50:36</sys_created_on>
+        <sys_id>da939fb287630dd0bb8897983cbb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:50:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9e939fb287630dd0bb8897983cbb35de"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9e939fb287630dd0bb8897983cbb35de"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>d63b377d876385d0bb8897983cbb3587</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-08-30 18:54:55</sys_updated_on>
+        <ui_id>904b139a-c60f-4ad0-9af4-469c1a748afd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d63b377d876385d0bb8897983cbb3587"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d63b377d876385d0bb8897983cbb3587</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>123b377d876385d0bb8897983cbb358c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <value>x_snc_new_vendor_0_vendor_info</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d63b377d876385d0bb8897983cbb3587</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>5e3b377d876385d0bb8897983cbb358b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d63b377d876385d0bb8897983cbb3587</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>9a3b377d876385d0bb8897983cbb358b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <value>chris.bennett@servienow.com</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d63b377d876385d0bb8897983cbb3587</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>cd9c0ff687230dd0bb8897983cbb3537</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <value>ACH verification follow up</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d63b377d876385d0bb8897983cbb3587"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d63b377d876385d0bb8897983cbb3587</id>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>de3b377d876385d0bb8897983cbb358a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:422dd460-226d-4eb2-85a2-84a29321549b}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:422dd460-226d-4eb2-85a2-84a29321549b}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Updated &amp;gt; Vendor Info Record &amp;gt; Vendor name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Vendor name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_422dd460-226d-4eb2-85a2-84a29321549b" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:e4005f2f-328e-4a7f-9428-d2409fadf6d9}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:e4005f2f-328e-4a7f-9428-d2409fadf6d9}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Updated &amp;gt; Vendor Info Record &amp;gt; Created by"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Created by&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e4005f2f-328e-4a7f-9428-d2409fadf6d9" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;this is a follow up from our phone call.&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;p&gt;Vendor Maintenance&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d63b377d876385d0bb8897983cbb3587</id>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>1a3b377d876385d0bb8897983cbb358b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d63b377d876385d0bb8897983cbb3587</id>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>963b377d876385d0bb8897983cbb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d63b377d876385d0bb8897983cbb3587</id>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>923b377d876385d0bb8897983cbb358b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d63b377d876385d0bb8897983cbb3587</id>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>563b377d876385d0bb8897983cbb358b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d63b377d876385d0bb8897983cbb3587"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d63b377d876385d0bb8897983cbb3587"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>f7fa13fe87630dd0bb8897983cbb35d7</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-08-30 18:54:55</sys_updated_on>
+        <ui_id>ade91f86-85f5-4f0e-887a-fadff4decd25</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f7fa13fe87630dd0bb8897983cbb35d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f7fa13fe87630dd0bb8897983cbb35d7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>3bfa13fe87630dd0bb8897983cbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f7fa13fe87630dd0bb8897983cbb35d7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>bffa13fe87630dd0bb8897983cbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <value>x_snc_new_vendor_0_retention</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f7fa13fe87630dd0bb8897983cbb35d7</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>fbfa13fe87630dd0bb8897983cbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f7fa13fe87630dd0bb8897983cbb35d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>fffa13fe87630dd0bb8897983cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f7fa13fe87630dd0bb8897983cbb35d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>f7fa13fe87630dd0bb8897983cbb35d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>bbfa13fe87630dd0bb8897983cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.a337c9dfc9692050f877548ac44adacb}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>f7fa13fe87630dd0bb8897983cbb35d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>bbfa13fe87630dd0bb8897983cbb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>f7fa13fe87630dd0bb8897983cbb35d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>f7fa13fe87630dd0bb8897983cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>f7fa13fe87630dd0bb8897983cbb35d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>73fa13fe87630dd0bb8897983cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f7fa13fe87630dd0bb8897983cbb35d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>37fa13fe87630dd0bb8897983cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{62733943-ea13-40d3-acb8-e5b9713236bc.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>f7fa13fe87630dd0bb8897983cbb35d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>7ffa13fe87630dd0bb8897983cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f7fa13fe87630dd0bb8897983cbb35d7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7fa13fe87630dd0bb8897983cbb35d7"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT INb3fa13fe87630dd0bb8897983cbb35dd"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">37fa13fe87630dd0bb8897983cbb35dc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:55</sys_created_on>
+        <sys_id>b3fa13fe87630dd0bb8897983cbb35dd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <ui_id>03dc7c4b-d6e6-4da0-810e-9b08ebd19b7c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b3fa13fe87630dd0bb8897983cbb35dd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b3fa13fe87630dd0bb8897983cbb35dd</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>7ffa13fe87630dd0bb8897983cbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b3fa13fe87630dd0bb8897983cbb35dd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b3fa13fe87630dd0bb8897983cbb35dd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>fbfa13fe87630dd0bb8897983cbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ade91f86-85f5-4f0e-887a-fadff4decd25.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b3fa13fe87630dd0bb8897983cbb35dd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:22:56</sys_created_on>
+        <sys_id>3bfa13fe87630dd0bb8897983cbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:22:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b3fa13fe87630dd0bb8897983cbb35dd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b3fa13fe87630dd0bb8897983cbb35dd"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN019c0ff687230dd0bb8897983cbb353b,0d9c0ff687230dd0bb8897983cbb353b,123b377d876385d0bb8897983cbb358f,499c0ff687230dd0bb8897983cbb353b,859c0ff687230dd0bb8897983cbb353b,c19c0ff687230dd0bb8897983cbb353b,c59c0ff687230dd0bb8897983cbb353a,cd9c0ff687230dd0bb8897983cbb353b,d63b377d876385d0bb8897983cbb358e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>019c0ff687230dd0bb8897983cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0210b26e-fc4f-4699-9201-3bad6e9a5625</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>0d9c0ff687230dd0bb8897983cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dabd1f41-1726-4a75-8f31-c6e93b7d5b1c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.vendor_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>123b377d876385d0bb8897983cbb358f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1578b459-0890-4894-b2cf-b3d124e6a146</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>499c0ff687230dd0bb8897983cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>fd55320e-af4a-4f3b-9a3e-d78031b606f8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>859c0ff687230dd0bb8897983cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ae39eff9-51c8-48e9-846d-fbd3d0fc5a7c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>c19c0ff687230dd0bb8897983cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>91198c6d-6d3f-48cc-8a1a-2c36559d43fa</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.vendor_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>c59c0ff687230dd0bb8897983cbb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>422dd460-226d-4eb2-85a2-84a29321549b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>cd9c0ff687230dd0bb8897983cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e4005f2f-328e-4a7f-9428-d2409fadf6d9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>83ffee7987ab45d0bb8897983cbb355a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>d63b377d876385d0bb8897983cbb358e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1b3d502d-b8a9-46a6-8d7c-6b4099183239</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN419c0ff687230dd0bb8897983cbb352c,523b377d876385d0bb8897983cbb356f,963b377d876385d0bb8897983cbb356b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:19:56</sys_created_on>
+        <sys_id>419c0ff687230dd0bb8897983cbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:19:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>523b377d876385d0bb8897983cbb356f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:09:48</sys_created_on>
+        <sys_id>963b377d876385d0bb8897983cbb356b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:09:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=83ffee7987ab45d0bb8897983cbb355a^sys_idNOT IN92d3d7f287630dd0bb8897983cbb35b8"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"92d3d7f287630dd0bb8897983cbb35b8","name":"plan","plan_signature":null}}</plan>
+        <plan_id>83ffee7987ab45d0bb8897983cbb355a</plan_id>
+        <snapshot>71ee014387299110de3f21b8cebb357b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92d3d7f287630dd0bb8897983cbb35b8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <trigger display_value="">1e30ab3a87a30dd0bb8897983cbb3556</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=83ffee7987ab45d0bb8897983cbb355a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>send notification to procurement or business of new vendor</description>
+        <internal_name>notify_procurement_or_business</internal_name>
+        <label_cache>[{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛Vendor Info Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"sys_id"},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.__dont_treat_as_error__","label":"2 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.__action_status__","label":"2 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.Table","label":"2 - Create Task➛Retention Package Table","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"62733943-ea13-40d3-acb8-e5b9713236bc.Record","label":"2 - Create Task➛Retention Package Record","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Vendor Info Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"sys_created_by"},{"name":"Created_1.current.vendor_name","label":"Trigger - Record Created➛Vendor Info Record➛Vendor name","reference":"","reference_display":"Vendor name","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"vendor_name"},{"name":"Created_1.current","label":"Trigger - Record Created➛Vendor Info Record","reference":"x_snc_new_vendor_0_vendor_info","reference_display":"Vendor Info","type":"reference","base_type":"reference","attributes":{}},{"name":"904b139a-c60f-4ad0-9af4-469c1a748afd.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"904b139a-c60f-4ad0-9af4-469c1a748afd.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"904b139a-c60f-4ad0-9af4-469c1a748afd.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Vendor Info Record","reference":"x_snc_new_vendor_0_vendor_info","reference_display":"Vendor Info","type":"reference","base_type":"reference","attributes":{}},{"name":"Updated_1.current.vendor_name","label":"Trigger - Record Updated➛Vendor Info Record➛Vendor name","reference":"","reference_display":"Vendor name","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"vendor_name"},{"name":"Updated_1.current.sys_created_by","label":"Trigger - Record Updated➛Vendor Info Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_snc_new_vendor_0_vendor_info","column_name":"sys_created_by"},{"name":"ade91f86-85f5-4f0e-887a-fadff4decd25.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ade91f86-85f5-4f0e-887a-fadff4decd25.__action_status__","label":"3 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ade91f86-85f5-4f0e-887a-fadff4decd25.__dont_treat_as_error__","label":"3 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.a337c9dfc9692050f877548ac44adacb}}","label":"Approvers - Record Updated","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.record","label":"5 - Update Record➛Retention Package Record","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.table_name","label":"5 - Update Record➛Retention Package Table","reference":"x_snc_new_vendor_0_retention","reference_display":"Retention Package","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51fb9fe8-420d-447d-82dd-58e3236fd624.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Notify Procurement or Business</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Notify Procurement or Business">83ffee7987ab45d0bb8897983cbb355a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>31d3d7f287630dd0bb8897983cbb351d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:45</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=31d3d7f287630dd0bb8897983cbb351d^sys_idNOT IN42d3d7f287630dd0bb8897983cbb358f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>42d3d7f287630dd0bb8897983cbb358f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:46</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=42d3d7f287630dd0bb8897983cbb358f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>42d3d7f287630dd0bb8897983cbb358f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>42d3d7f287630dd0bb8897983cbb3591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value>x_snc_new_vendor_0_vendor_info</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>42d3d7f287630dd0bb8897983cbb358f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>8ed3d7f287630dd0bb8897983cbb3590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value>vendor_contacted=spoke_with_vendor</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=42d3d7f287630dd0bb8897983cbb358f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=31d3d7f287630dd0bb8897983cbb351d^sys_idNOT INb1d3d7f287630dd0bb8897983cbb351e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>31d3d7f287630dd0bb8897983cbb351d</id>
+        <name>Notify Procurement or Business</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:39</sys_created_on>
+        <sys_id>b1d3d7f287630dd0bb8897983cbb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b1d3d7f287630dd0bb8897983cbb351e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=31d3d7f287630dd0bb8897983cbb351d^sys_idNOT IN4ed3d7f287630dd0bb8897983cbb355f,f5d3d7f287630dd0bb8897983cbb353a,fdd3d7f287630dd0bb8897983cbb3556"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</model>
+        <model_id>31d3d7f287630dd0bb8897983cbb351d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ed3d7f287630dd0bb8897983cbb355f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</model>
+        <model_id>31d3d7f287630dd0bb8897983cbb351d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>f5d3d7f287630dd0bb8897983cbb353a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD06306b3af3a30dd044649cb461567655,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</model>
+        <model_id>31d3d7f287630dd0bb8897983cbb351d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>fdd3d7f287630dd0bb8897983cbb3556</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=31d3d7f287630dd0bb8897983cbb351d^sys_idNOT IN225edf3687a30dd0bb8897983cbb3529,42d3d7f287630dd0bb8897983cbb358d,4ad3d7f287630dd0bb8897983cbb3581,de5edf3687a30dd0bb8897983cbb351e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</flow>
+        <order>5</order>
+        <parent_ui_id>03dc7c4b-d6e6-4da0-810e-9b08ebd19b7c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>225edf3687a30dd0bb8897983cbb3529</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <ui_id>51fb9fe8-420d-447d-82dd-58e3236fd624</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=225edf3687a30dd0bb8897983cbb3529"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>225edf3687a30dd0bb8897983cbb3529</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>225edf3687a30dd0bb8897983cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <value>x_snc_new_vendor_0_retention</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>225edf3687a30dd0bb8897983cbb3529</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>6e5edf3687a30dd0bb8897983cbb352a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <value>assignment_group={"display":"Treasury Fulfillers","value":"067156e6db9a7c101823c04b1396197d"}^assigned_to={"display":"Annie Approver","value":"c9884ac30a0a0bdb3879454e8f02774e"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=225edf3687a30dd0bb8897983cbb3529"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>225edf3687a30dd0bb8897983cbb3529</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>2a5edf3687a30dd0bb8897983cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{62733943-ea13-40d3-acb8-e5b9713236bc.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>225edf3687a30dd0bb8897983cbb3529</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>665edf3687a30dd0bb8897983cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>225edf3687a30dd0bb8897983cbb3529</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>ea5edf3687a30dd0bb8897983cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=225edf3687a30dd0bb8897983cbb3529"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=225edf3687a30dd0bb8897983cbb3529"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>42d3d7f287630dd0bb8897983cbb358d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <ui_id>62733943-ea13-40d3-acb8-e5b9713236bc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=42d3d7f287630dd0bb8897983cbb358d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42d3d7f287630dd0bb8897983cbb358d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>cad3d7f287630dd0bb8897983cbb358e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value>x_snc_new_vendor_0_retention</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=42d3d7f287630dd0bb8897983cbb358d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>42d3d7f287630dd0bb8897983cbb358d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ad3d7f287630dd0bb8897983cbb358e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>vendor_name={{Updated_1.current.vendor_name}}^parent={{Updated_1.current.sys_id}}^assignment_group={"display":"Approvers","value":"a337c9dfc9692050f877548ac44adacb"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>42d3d7f287630dd0bb8897983cbb358d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>86d3d7f287630dd0bb8897983cbb358e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=42d3d7f287630dd0bb8897983cbb358d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42d3d7f287630dd0bb8897983cbb358d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ad3d7f287630dd0bb8897983cbb3581</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <ui_id>904b139a-c60f-4ad0-9af4-469c1a748afd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ad3d7f287630dd0bb8897983cbb3581"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ad3d7f287630dd0bb8897983cbb3581</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ed3d7f287630dd0bb8897983cbb3585</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value>ACH verification follow up</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ad3d7f287630dd0bb8897983cbb3581</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>8ad3d7f287630dd0bb8897983cbb3585</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value>x_snc_new_vendor_0_vendor_info</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ad3d7f287630dd0bb8897983cbb3581</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>c6d3d7f287630dd0bb8897983cbb3585</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ad3d7f287630dd0bb8897983cbb3581</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>ced3d7f287630dd0bb8897983cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <value>chris.bennett@servienow.com</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ad3d7f287630dd0bb8897983cbb3581"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>4ad3d7f287630dd0bb8897983cbb3581</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>06d3d7f287630dd0bb8897983cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:422dd460-226d-4eb2-85a2-84a29321549b}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:422dd460-226d-4eb2-85a2-84a29321549b}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Updated &amp;gt; Vendor Info Record &amp;gt; Vendor name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Vendor name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_422dd460-226d-4eb2-85a2-84a29321549b" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:e4005f2f-328e-4a7f-9428-d2409fadf6d9}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:e4005f2f-328e-4a7f-9428-d2409fadf6d9}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Updated &amp;gt; Vendor Info Record &amp;gt; Created by"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Created by&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e4005f2f-328e-4a7f-9428-d2409fadf6d9" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;this is a follow up from our phone call.&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;p&gt;Vendor Maintenance&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>4ad3d7f287630dd0bb8897983cbb3581</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ed3d7f287630dd0bb8897983cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>4ad3d7f287630dd0bb8897983cbb3581</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ed3d7f287630dd0bb8897983cbb3583</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4ad3d7f287630dd0bb8897983cbb3581</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>c6d3d7f287630dd0bb8897983cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4ad3d7f287630dd0bb8897983cbb3581</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>8ad3d7f287630dd0bb8897983cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ad3d7f287630dd0bb8897983cbb3581"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ad3d7f287630dd0bb8897983cbb3581"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>de5edf3687a30dd0bb8897983cbb351e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <ui_id>ade91f86-85f5-4f0e-887a-fadff4decd25</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=de5edf3687a30dd0bb8897983cbb351e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>de5edf3687a30dd0bb8897983cbb351e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>125edf3687a30dd0bb8897983cbb3522</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>de5edf3687a30dd0bb8897983cbb351e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>5a5edf3687a30dd0bb8897983cbb3522</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <value>x_snc_new_vendor_0_retention</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>de5edf3687a30dd0bb8897983cbb351e</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>965edf3687a30dd0bb8897983cbb3522</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>de5edf3687a30dd0bb8897983cbb351e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>d25edf3687a30dd0bb8897983cbb3522</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=de5edf3687a30dd0bb8897983cbb351e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>de5edf3687a30dd0bb8897983cbb351e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>da5edf3687a30dd0bb8897983cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.a337c9dfc9692050f877548ac44adacb}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>de5edf3687a30dd0bb8897983cbb351e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>de5edf3687a30dd0bb8897983cbb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>de5edf3687a30dd0bb8897983cbb351e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>1a5edf3687a30dd0bb8897983cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>de5edf3687a30dd0bb8897983cbb351e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>925edf3687a30dd0bb8897983cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>de5edf3687a30dd0bb8897983cbb351e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>565edf3687a30dd0bb8897983cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{62733943-ea13-40d3-acb8-e5b9713236bc.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>de5edf3687a30dd0bb8897983cbb351e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>9e5edf3687a30dd0bb8897983cbb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=de5edf3687a30dd0bb8897983cbb351e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=de5edf3687a30dd0bb8897983cbb351e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=31d3d7f287630dd0bb8897983cbb351d^sys_idNOT INae5edf3687a30dd0bb8897983cbb352b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">37fa13fe87630dd0bb8897983cbb35dc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Notify Procurement or Business">31d3d7f287630dd0bb8897983cbb351d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:34</sys_created_on>
+        <sys_id>ae5edf3687a30dd0bb8897983cbb352b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:45:44</sys_updated_on>
+        <ui_id>03dc7c4b-d6e6-4da0-810e-9b08ebd19b7c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ae5edf3687a30dd0bb8897983cbb352b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>ae5edf3687a30dd0bb8897983cbb352b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:35</sys_created_on>
+        <sys_id>625edf3687a30dd0bb8897983cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:35</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ae5edf3687a30dd0bb8897983cbb352b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>ae5edf3687a30dd0bb8897983cbb352b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:35</sys_created_on>
+        <sys_id>ee5edf3687a30dd0bb8897983cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ade91f86-85f5-4f0e-887a-fadff4decd25.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>ae5edf3687a30dd0bb8897983cbb352b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 00:37:35</sys_created_on>
+        <sys_id>2e5edf3687a30dd0bb8897983cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 00:37:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ae5edf3687a30dd0bb8897983cbb352b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ae5edf3687a30dd0bb8897983cbb352b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=31d3d7f287630dd0bb8897983cbb351d^sys_idNOT IN02d3d7f287630dd0bb8897983cbb3592,06d3d7f287630dd0bb8897983cbb3592,0ad3d7f287630dd0bb8897983cbb3592,0ed3d7f287630dd0bb8897983cbb3591,82d3d7f287630dd0bb8897983cbb3592,86d3d7f287630dd0bb8897983cbb3591,86d3d7f287630dd0bb8897983cbb3592,8ad3d7f287630dd0bb8897983cbb3592,8ed3d7f287630dd0bb8897983cbb3591"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>02d3d7f287630dd0bb8897983cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dabd1f41-1726-4a75-8f31-c6e93b7d5b1c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>06d3d7f287630dd0bb8897983cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1b3d502d-b8a9-46a6-8d7c-6b4099183239</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>0ad3d7f287630dd0bb8897983cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ae39eff9-51c8-48e9-846d-fbd3d0fc5a7c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>0ed3d7f287630dd0bb8897983cbb3591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e4005f2f-328e-4a7f-9428-d2409fadf6d9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.vendor_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>82d3d7f287630dd0bb8897983cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1578b459-0890-4894-b2cf-b3d124e6a146</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>86d3d7f287630dd0bb8897983cbb3591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>91198c6d-6d3f-48cc-8a1a-2c36559d43fa</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.vendor_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>86d3d7f287630dd0bb8897983cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>422dd460-226d-4eb2-85a2-84a29321549b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>8ad3d7f287630dd0bb8897983cbb3592</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0210b26e-fc4f-4699-9201-3bad6e9a5625</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>31d3d7f287630dd0bb8897983cbb351d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_created_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>8ed3d7f287630dd0bb8897983cbb3591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>fd55320e-af4a-4f3b-9a3e-d78031b606f8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d^sys_idNOT IN4ed3d7f287630dd0bb8897983cbb3564,75d3d7f287630dd0bb8897983cbb3553,c2d3d7f287630dd0bb8897983cbb355c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>4ed3d7f287630dd0bb8897983cbb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>75d3d7f287630dd0bb8897983cbb3553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:51:40</sys_created_on>
+        <sys_id>c2d3d7f287630dd0bb8897983cbb355c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:51:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_31d3d7f287630dd0bb8897983cbb351d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>83ffee7987ab45d0bb8897983cbb355a</sys_id>
+        <latest_snapshot>31d3d7f287630dd0bb8897983cbb351d</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch4b-07-19-2022_08-09-2022_1837.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

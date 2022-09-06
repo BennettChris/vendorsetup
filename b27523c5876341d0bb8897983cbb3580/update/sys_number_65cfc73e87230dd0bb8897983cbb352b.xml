@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_snc_new_vendor_0_retention">x_snc_new_vendor_0_retention</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>RETEN</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-22 23:33:54</sys_created_on>
+        <sys_id>65cfc73e87230dd0bb8897983cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RETEN</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sys_number_65cfc73e87230dd0bb8897983cbb352b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-22 23:33:54</sys_updated_on>
+    </sys_number>
+</record_update>

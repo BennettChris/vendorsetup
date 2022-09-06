@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2022-05-20 11:06:50</change_date>
+        <changed_by display_value="Chris Bennett">684aba6fdb94cd901823c04b1396194c</changed_by>
+        <content display_value="Create custom playbook configurations">a4c50cad7761201022f7f4d268106143</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 11:06:50</sys_created_on>
+        <sys_id>f691da8a8723c5d0bb8897983cbb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2022-05-20 11:06:50</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>gsw_change_log_f691da8a8723c5d0bb8897983cbb3549</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 11:06:50</sys_updated_on>
+        <type>1</type>
+    </gsw_change_log>
+</record_update>
