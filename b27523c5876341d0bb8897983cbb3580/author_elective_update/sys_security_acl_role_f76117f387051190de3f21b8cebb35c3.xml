@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-08-08 15:49:16</sys_created_on>
+        <sys_id>f76117f387051190de3f21b8cebb35c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_new_vendor_0_vendorcore.x_snc_new_vendor_0.user</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_security_acl display_value="x_snc_new_vendor_0_vendorcore">7b6117f387051190de3f21b8cebb35bf</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f76117f387051190de3f21b8cebb35c3</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-08-08 15:49:16</sys_updated_on>
+        <sys_user_role display_value="x_snc_new_vendor_0.user" name="x_snc_new_vendor_0.user">76cf4b3e87230dd0bb8897983cbb359d</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</application>
+        <file_path/>
+        <instance_id>a122f7bbdb98c510f37acac50596196d</instance_id>
+        <instance_name>hoosiersdemo</instance_name>
+        <name>sys_security_acl_role_f76117f387051190de3f21b8cebb35c3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>chris.bennett</sys_created_by><sys_created_on>2022-08-08 15:49:16</sys_created_on><sys_id>f76117f387051190de3f21b8cebb35c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_new_vendor_0_vendorcore.x_snc_new_vendor_0.user</sys_name><sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package><sys_policy/><sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope><sys_security_acl display_value="x_snc_new_vendor_0_vendorcore">7b6117f387051190de3f21b8cebb35bf</sys_security_acl><sys_update_name>sys_security_acl_role_f76117f387051190de3f21b8cebb35c3</sys_update_name><sys_updated_by>chris.bennett</sys_updated_by><sys_updated_on>2022-08-08 15:49:16</sys_updated_on><sys_user_role display_value="x_snc_new_vendor_0.user" name="x_snc_new_vendor_0.user">76cf4b3e87230dd0bb8897983cbb359d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1062359448</payload_hash>
+        <record_name>x_snc_new_vendor_0_vendorcore.x_snc_new_vendor_0.user</record_name>
+        <reverted_from/>
+        <source>fe7523c5876341d0bb8897983cbb3582</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-08-08 15:49:16</sys_created_on>
+        <sys_id>b76117f387051190de3f21b8cebb35c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1827e2565030000001</sys_recorded_at>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-08-08 15:49:16</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>bf6117f32705119051d08fed50c312c5</update_guid>
+        <update_guid_history>bf6117f32705119051d08fed50c312c5:-1062359448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_new_vendor_0_vendorcore.x_snc_new_vendor_0.user">edd4a14187c29110de3f21b8cebb3564</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-09-18 11:54:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>7584805910a94fa09080b7f980a9bf04</sys_id>
+        <sys_metadata>f76117f387051190de3f21b8cebb35c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_new_vendor_0_vendorcore.x_snc_new_vendor_0.user</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_parent display_value="">7b6117f387051190de3f21b8cebb35bf</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_scope_delete display_value="">0480b2073a174490b3213a169621d924</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_f76117f387051190de3f21b8cebb35c3</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_f76117f387051190de3f21b8cebb35c3">b76117f387051190de3f21b8cebb35c6</sys_update_version>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-09-18 11:54:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

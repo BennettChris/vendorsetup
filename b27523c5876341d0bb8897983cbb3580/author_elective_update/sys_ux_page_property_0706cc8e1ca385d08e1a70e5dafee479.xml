@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_notification_uiRoute</name>
+        <page display_value="">0b06cc8e9ca385d00d01f70c9aa7947b</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-05-20 00:57:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>0706cc8e1ca385d08e1a70e5dafee479</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_notification_uiRoute</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sys_ux_page_property_0706cc8e1ca385d08e1a70e5dafee479</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-05-20 00:57:07</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_snc_new_vendor_0.0b06cc8e9ca385d00d01f70c9aa7947b.root.chrome_notification_uiRoute</unique_name>
+        <value>cb1af195872023002941b53046cb0b4e</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</application>
+        <file_path/>
+        <instance_id>a122f7bbdb98c510f37acac50596196d</instance_id>
+        <instance_name>hoosiersdemo</instance_name>
+        <name>sys_ux_page_property_0706cc8e1ca385d08e1a70e5dafee479</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_notification_uiRoute</name><page display_value="">0b06cc8e9ca385d00d01f70c9aa7947b</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>chris.bennett</sys_created_by><sys_created_on>2022-05-20 00:57:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>0706cc8e1ca385d08e1a70e5dafee479</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_notification_uiRoute</sys_name><sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package><sys_policy/><sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope><sys_update_name>sys_ux_page_property_0706cc8e1ca385d08e1a70e5dafee479</sys_update_name><sys_updated_by>chris.bennett</sys_updated_by><sys_updated_on>2022-05-20 00:57:07</sys_updated_on><type>string</type><unique_name>x_snc_new_vendor_0.0b06cc8e9ca385d00d01f70c9aa7947b.root.chrome_notification_uiRoute</unique_name><value>cb1af195872023002941b53046cb0b4e</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-2132382685</payload_hash>
+        <record_name>chrome_notification_uiRoute</record_name>
+        <reverted_from/>
+        <source>e1e2be2287211110bb8897983cbb3504</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-08-29 12:54:50</sys_created_on>
+        <sys_id>6915ad4187c29110de3f21b8cebb3530</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>182e9ab3d900000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>2915ad41bbc291101a2643e6517ac130</update_guid>
+        <update_guid_history>2915ad41bbc291101a2643e6517ac130:-2132382685</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-09-18 11:55:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>1cbd560a761440f8975f79fbec3aa569</sys_id>
+        <sys_metadata>0706cc8e1ca385d08e1a70e5dafee479</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_notification_uiRoute</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_scope_delete display_value="">0480b2073a174490b3213a169621d924</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_0706cc8e1ca385d08e1a70e5dafee479</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_0706cc8e1ca385d08e1a70e5dafee479">6915ad4187c29110de3f21b8cebb3530</sys_update_version>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-09-18 11:55:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

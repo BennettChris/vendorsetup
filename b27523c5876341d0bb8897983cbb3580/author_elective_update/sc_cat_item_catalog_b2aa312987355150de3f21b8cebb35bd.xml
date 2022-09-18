@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Vendor requirements">4e9a7de587355150de3f21b8cebb35c8</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-09-07 16:30:56</sys_created_on>
+        <sys_id>b2aa312987355150de3f21b8cebb35bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Vendor requirements</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_b2aa312987355150de3f21b8cebb35bd</sys_update_name>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-09-07 16:30:56</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</application>
+        <file_path/>
+        <instance_id>a122f7bbdb98c510f37acac50596196d</instance_id>
+        <instance_name>hoosiersdemo</instance_name>
+        <name>sc_cat_item_catalog_b2aa312987355150de3f21b8cebb35bd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Vendor requirements">4e9a7de587355150de3f21b8cebb35c8</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>chris.bennett</sys_created_by><sys_created_on>2022-09-07 16:30:56</sys_created_on><sys_id>b2aa312987355150de3f21b8cebb35bd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Vendor requirements</sys_name><sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package><sys_policy/><sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope><sys_update_name>sc_cat_item_catalog_b2aa312987355150de3f21b8cebb35bd</sys_update_name><sys_updated_by>chris.bennett</sys_updated_by><sys_updated_on>2022-09-07 16:30:56</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-24532117</payload_hash>
+        <record_name>Service Catalog.Vendor requirements</record_name>
+        <reverted_from/>
+        <source>0a655cdd87f1dd10de3f21b8cebb359a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-09-07 16:30:56</sys_created_on>
+        <sys_id>7aaa312987355150de3f21b8cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18318ca55390000001</sys_recorded_at>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-09-07 16:30:56</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>beaa3129c53551509be9a922f34f9fbf</update_guid>
+        <update_guid_history>beaa3129c53551509be9a922f34f9fbf:-24532117</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Vendor requirements">bcba712987355150de3f21b8cebb35de</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-09-07 16:31:05</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>213293b633a94472863b9219cc684404</sys_id>
+        <sys_metadata>b2aa312987355150de3f21b8cebb35bd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Vendor requirements</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_parent display_value="">4e9a7de587355150de3f21b8cebb35c8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_scope_delete display_value="">0480b2073a174490b3213a169621d924</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_b2aa312987355150de3f21b8cebb35bd</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_b2aa312987355150de3f21b8cebb35bd">7aaa312987355150de3f21b8cebb35c0</sys_update_version>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-09-07 16:31:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>featureRoutes</name>
+        <page display_value="New Vendor Setup">0b06cc8e9ca385d00d01f70c9aa7947b</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-05-25 18:28:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>6ea6adff87e30110bb8897983cbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>featureRoutes</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_update_name>sys_ux_page_property_6ea6adff87e30110bb8897983cbb35d8</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-05-25 18:28:35</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_snc_new_vendor_0.0b06cc8e9ca385d00d01f70c9aa7947b.root.featureRoutes</unique_name>
+        <value>{"record":{"_default":{"routeInfo":{"route":"record","fields":[{"name":"table","mapping":{"address":"table"}},{"name":"sysId","mapping":{"address":"sysId"}}],"params":[{"name":"query","mapping":{"address":"query"}},{"name":"extraParams","mapping":{"address":"extraParams"}}]}}},"list":{"_default":{"routeInfo":{"route":"list","fields":[],"params":[{"name":"listId","mapping":{"address":"listId"}},{"name":"configId","mapping":{"address":"configId"}},{"name":"tinyId","mapping":{"address":"tinyId"}}]}}}}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=6ea6adff87e30110bb8897983cbb35d8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</application>
+        <file_path/>
+        <instance_id>a122f7bbdb98c510f37acac50596196d</instance_id>
+        <instance_name>hoosiersdemo</instance_name>
+        <name>sys_ux_page_property_6ea6adff87e30110bb8897983cbb35d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>featureRoutes</name><page display_value="New Vendor Setup">0b06cc8e9ca385d00d01f70c9aa7947b</page><required_translations>[ ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-05-25 18:28:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>6ea6adff87e30110bb8897983cbb35d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>featureRoutes</sys_name><sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package><sys_policy/><sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope><sys_update_name>sys_ux_page_property_6ea6adff87e30110bb8897983cbb35d8</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-05-25 18:28:35</sys_updated_on><type>json</type><unique_name>x_snc_new_vendor_0.0b06cc8e9ca385d00d01f70c9aa7947b.root.featureRoutes</unique_name><value>{"record":{"_default":{"routeInfo":{"route":"record","fields":[{"name":"table","mapping":{"address":"table"}},{"name":"sysId","mapping":{"address":"sysId"}}],"params":[{"name":"query","mapping":{"address":"query"}},{"name":"extraParams","mapping":{"address":"extraParams"}}]}}},"list":{"_default":{"routeInfo":{"route":"list","fields":[],"params":[{"name":"listId","mapping":{"address":"listId"}},{"name":"configId","mapping":{"address":"configId"}},{"name":"tinyId","mapping":{"address":"tinyId"}}]}}}}</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=6ea6adff87e30110bb8897983cbb35d8"/></record_update>]]></payload>
+        <payload_hash>1036258668</payload_hash>
+        <record_name>featureRoutes</record_name>
+        <reverted_from/>
+        <source>bc91d5f2db4430101823c04b13961955</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-05-25 18:28:35</sys_created_on>
+        <sys_id>aaa6adff87e30110bb8897983cbb35db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180fc7a4ea20000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-05-25 18:28:35</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>62a6adff00e3011019b25d822ccb29db</update_guid>
+        <update_guid_history>62a6adff00e3011019b25d822ccb29db:1036258668</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>chris.bennett</sys_created_by>
+        <sys_created_on>2022-09-18 11:55:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>99186ed8761b4cd1b9492aea74499a29</sys_id>
+        <sys_metadata>6ea6adff87e30110bb8897983cbb35d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>featureRoutes</sys_name>
+        <sys_package display_value="New Vendor Setup" source="x_snc_new_vendor_0">b27523c5876341d0bb8897983cbb3580</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="New Vendor Setup">b27523c5876341d0bb8897983cbb3580</sys_scope>
+        <sys_scope_delete display_value="">0480b2073a174490b3213a169621d924</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_6ea6adff87e30110bb8897983cbb35d8</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_6ea6adff87e30110bb8897983cbb35d8">aaa6adff87e30110bb8897983cbb35db</sys_update_version>
+        <sys_updated_by>chris.bennett</sys_updated_by>
+        <sys_updated_on>2022-09-18 11:55:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
